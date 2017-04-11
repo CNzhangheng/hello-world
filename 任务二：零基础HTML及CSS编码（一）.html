@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+        {
+            margin:0;
+            padding:0;
+        }
+        body{
+            line-height: 1.6em;
+            font-family: "宋体",Arial;
+            background-color: #dddddd;
+        }
+        .content-one,.content-two,.content-images,.content-form,.content-table{
+            margin: 30px 30px 30px 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 5px 5px 5px grey;
+        }
+        h2{
+            line-height: 2em;
+        }
+        h3,h3+p{
+            line-height: 2em;
+            color: grey;
+        }
+        h3+p+p{
+            text-indent: 2em;
+        }
+        .header{
+            width: 100%;
+            height: 60px;
+            background-color: #333333;
+        }
+        .header img{
+            margin-left:30px;
+            float: left;
+            width: 120px;
+        }
+        .header ul{
+            margin-left: 1100px;
+        }
+        .header li{
+            color: white;
+            margin-left: 20px;
+            margin-top:20px;
+            float: left;
+        }
+        .content-two li{
+            margin-left: 100px;
+            list-style: none;
+        }
+        .content-images div{
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            border: 1px solid grey;
+        }
+        .content-images div p{
+            text-align: center;
+        }
+        .content-images div img{
+            width: 100%;
+        }
+        .content-table li{
+            margin-left:100px;
+        }
+        .content-table table{
+            width: 100%;
+            border-collapse:collapse ;//边框重叠
+        }
+        .content-table thead{
+            color: white;
+            background-color: black;
+        }
+        .content-table tfoot{
+            background-color: #bcbeb8;
+        }
+        .content-form{
+            height: 580px;
+        }
+        .content-form-stub{
+            width: 5px;
+            height: 50px;
+            background-color: #bcbeb8;
+            float: left;
+        }
+        .content-form h2{
+            margin-left: 10px;
+            float: left;
+        }
+        .content-form-top{
+            float: left;
+        }
+        .content-form-left{
+            width: 40%;
+            float: left;
+            margin-top: 50px;
+            clear: both;
+            text-align: right;
+            line-height: 2em;
+        }
+        .content-form-left div{
+            margin-right: 15px;
+        }
+        .content-form-right{
+            width: 50%;
+            float: left;
+            margin-top: 50px;
+            line-height: 2em;
+        }
+        .content-form-right p{
+            font-size: small;
+            color: grey;
+        }
+        .content-form-footer{
+            width: 100%;
+            text-align: center;
+            float: left;
+            background-color: #3355cf;
+            border-radius:15px;
+        }
+        .content-submit{
+            /*vertical-align: middle;*/
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /*垂直居中*/
+            color: white;
+            font-size: larger;
+            border: none;
+            background-color: #3355cf;
+        }
+        .footer{
+            text-align: center;
+            width: 100%;
+            height: 60px;
+            background-color: black;
+        }
+        .footer p{
+            padding-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <img src="images/2.png" alt="">
+    <ul>
+        <li>导航链接一</li>
+        <li>导航链接二</li>
+        <li>导航链接三</li>
+        <li>导航链接四</li>
+    </ul>
+</div>
+<div class="content-one">
+    <h2>文章一级标题</h2>
+    <h3>文章二级标题</h3>
+    <p>文章作者&nbsp;文章发表时间</p>
+    <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，</p>
+    <p>换行了</p>
+    <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了</p>
+    <p>这是一个很长的段落，这是一个很长的段落，<a href="http://ife.baidu.com/">这里有一个链接链接到http://ife.baidu.com/</a>这是一个很长的段落，这是一个很长的段落，<strong>这里有个粗体字</strong>这是一个很长的段落，这是一个很长的段落，</p>
+    <img src="images/1.jpg" alt="这是一张图片">
+    <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了</p>
+    <p>这是一个很长的段落，这是一个很长的段落，<a href="http://ife.baidu.com/" target="_blank">这里有一个链接打开后新增窗口链接到http://ife.baidu.com/</a>这是一个很长的段落，这是一个很长的段落，<strong>这里有个粗体字</strong>这是一个很长的段落，这是一个很长的段落，</p>
+</div>
+<div class="content-two">
+    <h2>另一篇文章一级标题</h2>
+    <h3>文章二级标题</h3>
+    <p>文章作者&nbsp;文章发表时间</p>
+    <p>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了</p>
+    <p>这是一个很长的段落，这是一个很长的段落，<a href="http://ife.baidu.com/">这里有一个链接链接到http://ife.baidu.com/</a>这是一个很长的段落，这是一个很长的段落，<strong>这里有个粗体字</strong>这是一个很长的段落，这是一个很长的段落，</p>
+    <img src="images/1.jpg" alt="这是一张图片">
+    <ul>
+        <li>列表项目一</li>
+        <li>列表项目二</li>
+        <li>列表项目三</li>
+    </ul>
+</div>
+<div class="content-images">
+    <h2>图片</h2>
+    <div>
+        <p>好看的图片</p>
+        <img src="images/1.jpg" alt="这是一张图片">
+    </div>
+    <div>
+        <p>好看的图片</p>
+        <img src="images/1.jpg" alt="这是一张图片">
+    </div>
+    <div>
+        <p>好看的图片</p>
+        <img src="images/1.jpg" alt="这是一张图片">
+    </div>
+    <div>
+        <p>好看的图片</p>
+        <img src="images/1.jpg" alt="这是一张图片">
+    </div>
+    <div>
+        <p>好看的图片</p>
+        <img src="images/1.jpg" alt="这是一张图片">
+    </div>
+</div>
+<div class="content-table">
+    <h2>最后一篇文章一级标题</h2>
+    <h3>文章二级标题</h3>
+    <p>文章作者&nbsp;文章发表时间</p>
+    <ol>
+        <li>排名1</li>
+        <li>排名2</li>
+        <li>排名3</li>
+    </ol>
+    <p>下面是一个表格，给表格加了一个border="1"好让你看出来是一个表格</p>
+    <table border="1">
+        <thead>
+        <tr>
+            <td>表头</td>
+            <td>表头</td>
+            <td>表头</td>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td>总计</td>
+            <td colspan="2">1000</td> <!--水平方向单元格合并-->
+        </tr>
+        </tfoot>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+    </table>
+</div>
+<div class="content-form">
+    <form action="">
+        <div class="content-form-top">
+            <div class="content-form-stub"></div>
+            <h2>这里以后是一个侧栏，这是侧栏标题</h2>
+        </div>
+        <div class="content-form-left">
+            <div>
+                <p>请输入邮箱地址</p><br><br>
+                <label for="accuont1">请输入密码</label><br>
+                <label for="accuont2">请重复输入密码</label><br><br>
+                <p>性别</p>
+                <p>城市</p>
+                <p>爱好</p>
+                <p>个人描述</p>
+            </div>
+        </div>
+        <div class="content-form-right">
+            <input type="text" title="这是一个文本输入框" placeholder="这是一个多行输入框">
+            <p>邮箱地址请按要求格式输入</p><br>
+            <input type="password" title="这是一个文本输入框" placeholder="*********" id="accuont1"><br>
+            <input type="password" title="这是一个文本输入框" placeholder="*********" id="accuont2">
+            <p>密码请为6-16位英文数字</p>
+            <input type="radio" name="gender" checked>男
+            <input type="radio" name="gender">女<br>
+            <select>
+                <option value=1 selected=selected>北京<option>
+                <option value=2 selected=selected>上海<option>
+            </select><br>
+            <input type="checkbox" checked="checked">运动
+            <input type="checkbox">艺术
+            <input type="checkbox">科学<br>
+            <textarea placeholder="这是一个多行输入框，输入您的个人描述" cols="120" rows="8"></textarea><br>
+        </div>
+        <div class="content-form-footer">
+            <input type="submit" value="确认提交" class="content-submit">
+        </div>
+    </form>
+</div>
+<div class="footer">
+    <p>版权所有&copy;CNzhangheng</p>
+</div>
+</body>
+</html>
