@@ -1,0 +1,44 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "宋体", Arial;
+    line-height: 1.6em;
+}
+img{
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+}
+.wrap{
+    height: 600px;
+    margin: 20px;
+    border: 1px solid #999;
+    background-color: #eee;
+}
+.logo-team{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    float: left;
+    position: absolute;
+    border: 1px solid #999;
+}
+.main{
+    width: 65%;
+    float: left;
+    margin-left:280px;
+    margin-top: 20px;
+    padding: 20px;
+    position: absolute;
+    border: 1px solid #999;
+}
+.logo-person{
+    width: 120px;
+    float: left;
+    margin-top:20px;
+    margin-left: 1350px;
+    border: 1px solid #999;
+}
