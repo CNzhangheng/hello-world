@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+<button id="button">确认填写</button>
+
+<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+    window.onload = function(){
+        var oIpt = document.getElementById("aqi-input");
+        var oBto = document.getElementById("button");
+        var oSpan = document.getElementById("aqi-display");
+        oBto.onclick = function(){
+            if(!document.getElementById)return false;
+            if(!document.getElementById("aqi-input"))return false;
+            if(!document.getElementById("button"))return false;
+            if(!document.getElementById("aqi-display"))return false;
+            if(oIpt.value){
+                oSpan.innerHTML = oIpt.value;
+            }else{
+                oSpan.innerText ="你丫什么都没写";
+            }
+        }
+    }
+</script>
+</body>
+</html>
