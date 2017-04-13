@@ -71,8 +71,7 @@ h3+p+p{
     list-style: none;
 }
 .content-images{
-    min-height: 100px;
-    max-height: 1000px;
+    display: inline-block;
 }
 .content-images div{
     width: 150px;
